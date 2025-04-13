@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Figuelia Ya'Sin">
+    <meta name="description" content="WDD330: Mada-Weather">
+    <meta property="og:title" content="Home page Mada Weather project">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="to be added">
+    <meta property="og:image" content="to be added">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css">
+    <script defer src="js/scripts/app.js"></script>
+    <title>Home | Weather made easy </title>
+</head>
+<body>
+    <header>
+        <div class="logotitle">
+            <img src="images/logos/logo.png" alt="logo">
+            <h1>Mada-Weather</h1>
+        </div>
+      <input type="checkbox" id="burger-toggle">
+      <label for="burger-toggle" class="burger-container">
+       <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      </label>
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                  
+                </li>
+             
+                <li>
+                    <a href="houses.html">About</a>
+                </li>
+                <li>
+                    
+                    <a href="join.html">Blog</a>
+                </li>
+                 <li>
+                    <button class="mode" disabled><i class="fa-solid fa-circle-half-stroke"></i></button>
+                 </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="current">Check the weather in your city with <b>Mada-weather</b></h1>
+         <section class="bottom">
+    <div class="weather">
+
+        <div class="box">
+            <div class="head-box">
+                 <h2>Antsiranana</h2>
+                 
+            </div>
+            <div class="body-box">
+                <ul>
+                    <li class="cont"><span id="temp"></span>°C <img alt="icon" src="#" id="icon"><span id="currtemp"></span></li>
+                    <li ><span>Humidity: </span><span class="cont" id="humidity"></span></li>
+                    <li ><span>Sunrise: </span><span class="cont" id="sunrise"></span></li>
+                    <li ><span>Sunset: </span><span class="cont" id="sunset"></span></li>
+                 </ul>
+
+            </div>
+        </div>
+        <div class="box">
+            <div class="head-box">
+                 <h2>Toamasina</h2>
+                 
+            </div>
+            <div class="body-box">
+                <ul>
+                    <li class="cont"><span id="temp1"></span>°C <img alt="icon" src="#" id="icon1"><span id="currtemp1"></span></li>
+                    <li ><span>Humidity: </span><span class="cont" id="humidity1"></span></li>
+                    <li ><span>Sunrise: </span><span class="cont" id="sunrise1"></span></li>
+                    <li ><span>Sunset: </span><span class="cont" id="sunset1"></span></li>
+                 </ul>
+
+            </div>
+        </div>
+        <div class="box">
+            <div class="head-box">
+                 <h2>Mahajanga</h2>
+                 
+            </div>
+            <div class="body-box">
+                <ul>
+                    <li class="cont"><span id="temp2"></span>°C <img alt="icon" src="#" id="icon2"><span id="currtemp2"></span></li>
+                    <li ><span>Humidity: </span><span class="cont" id="humidity2"></span></li>
+                    <li ><span>Sunrise: </span><span class="cont" id="sunrise2"></span></li>
+                    <li ><span>Sunset: </span><span class="cont" id="sunset2"></span></li>
+                 </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="extrait">
+
+
+    </div>
+   </section>
+        <section class="top">
+            <div class="hero">
+                <!--<img src="images/banner.jpg" alt="">-->
+            </div>
+              
+            
+    </section>
+  
+    </main>
+    <footer>
+        <div class="addre">
+             <ul>
+                 <li><h2>Mada-Weather</h2></li>
+                 <li>201 Rue Valia, Antsiranana, Madagascar</li>
+                 <li>contact@mada-weather.com</li>
+                 <li>+261 32 97 728 54</li>
+             </ul>
+        </div>
+        <div class="socia">
+           <ul>
+            <li> <a href="https://www.facebook.com/figuelia.yasin.9"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.facebook.com/figuelia.yasin.9"><i class="fa-brands fa-youtube"></i></a></li>
+            <li> <a href="https://www.facebook.com/figuelia.yasin.9"><i class="fa-brands fa-linkedin"></i></a></li>
+
+           </ul>
+        </div>
+        <div class="modif">
+            <ul>
+                <li>WDD330 Class Project</li>
+                <li>Figuelia Ya'Sin</li>
+                <li><p>Copyright &copy; <span id="currentyear"></span> Mada-Weather </p></li>
+                <li> <p id="lastModified"></p></li>
+            </ul>
+        </div>
+        
+    </footer>
+</body>
+</html>
