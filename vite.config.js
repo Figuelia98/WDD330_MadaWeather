@@ -9,9 +9,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
-        city: resolve(__dirname, "src/city/index.html"),
-        about: resolve(__dirname, "src/about/index.html"),
-        blog: resolve(__dirname,"src/blog/index.html",),
+        city: resolve(__dirname, "src/public/city/index.html"),
+        about: resolve(__dirname, "src/public/about/index.html"),
+        blog: resolve(__dirname,"src/public/blog/index.html",),
       },
     },
   },
