@@ -9,25 +9,40 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="to be added">
     <meta property="og:image" content="to be added">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="public//images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css">
-    <script type="module" src="public/js/scripts/app.js"></script>
-    <title>Home | Weather made easy </title>
+    <script type="module" src="../js/scripts/appcity.js"></script>
+    <script type="module" src="../js/modules/data.mjs"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoZTiXV2HW6XtjcxlTa2bGyoUEiuFh6KU&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    <title>Mada weather | City and Regions</title>
 </head>
 <body>
     <header id="main-header">
         
     </header>
     <main>
-        <h1 class="current"><b>Madagascar Weather </b></h1>
+        <h1 class="current"></h1>
          <section class="bottom">
-    <div class="weather">
+    <div class="province">
 
         
    </div>
+   <div class="map">
+    <gmp-map center="-12.278022766113281,49.29142761230469" zoom="14" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="-12.278022766113281,49.29142761230469" title="My location"></gmp-advanced-marker>
+      </gmp-map>
+   </div>
+    <h3 id="titreReg">Regions</h3>
+    <hr>
+    <div class="regions">
+
+
+    </div>
+   
   
     </main>
     <footer id="main-footer">

@@ -1,0 +1,26 @@
+[
+    
+    { "Province": "Antsiranana", "Town": "Ambilobe" },
+    { "Province": "Antsiranana", "Town": "Sambava" },
+    { "Province": "Antsiranana", "Town": "Ambanja" },
+
+    { "Province": "Antananarivo", "Town": "Antsirabe" },
+    { "Province": "Antananarivo", "Town": "Tsiroanomandidy" },
+
+    { "Province": "Fianarantsoa", "Town": "Ambositra" },
+    { "Province": "Fianarantsoa", "Town": "Ihosy" },
+    { "Province": "Fianarantsoa", "Town": "Mananjary" },
+    { "Province": "Fianarantsoa", "Town": "Manakara" },
+
+    { "Province": "Toamasina", "Town": "Maroantsetra" },
+    { "Province": "Toamasina", "Town": "Ambatondrazaka" },
+    { "Province": "Toamasina", "Town": "Fenoarivo Atsinanana" },
+
+    { "Province": "Mahajanga", "Town": "Mahajanga" },
+    { "Province": "Mahajanga", "Town": "Maevatanana" },
+    { "Province": "Mahajanga", "Town": "Antsohihy" },
+
+    { "Province": "Toliara", "Town": "Toliara" },
+    { "Province": "Toliara", "Town": "Ambovombe" },
+    { "Province": "Toliara", "Town": "Morondava" }
+]

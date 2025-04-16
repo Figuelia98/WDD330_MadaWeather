@@ -12,6 +12,18 @@
     box-sizing: border-box;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
+  gmp-map {
+    height: 90%;
+  }
+  .map{
+    position:relative;
+    height: 400px;
+  }
+
+  .text-contenair{
+    text-align: left;
+  }
+
   /* Burger Icon Container */
   .burger-container {
     position: fixed;
@@ -131,6 +143,7 @@ header{
   text-align: right;
 }
 footer{
+  position: relative;
     background-color: rgb(44, 44, 44);
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -141,6 +154,7 @@ footer{
       font-style: normal;
       font-size: small;
   }
+
   footer ul{
     list-style: none;
   }
@@ -305,10 +319,185 @@ color:rgb(26, 27, 27);
 
  
 
-@media screen and (max-width:1500px) {
-  .houses{
-    grid-template-columns: 1fr 1fr 1fr;
+
+  /*Section HERO*/
+
+
+  .hero{
+    width: 95%;
+    margin: 0 auto;
+    padding: 5px;
+    height: 50%;
+    border-radius: 1rem;
+    background-color: var(--accent3-color)
+ 
+ 
+   }
+   .herohead{
+     font-size: 2vw;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: #2C535A;
+   }
+   main h1{ 
+     text-align: center;
+     margin: 20px;
+     font-size: 2vw;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: #2C535A;
+   }
+   .hero img{
+     margin: 0 auto;
+     width: 100%;
+     height: 600px;
+     border-radius: 1rem;
+   }
+   .hero a{
+     text-decoration: none;
+     background-color: #2e2e2e;
+     color: #c9f7ff;
+     padding: 20px;
+     border-radius: 1rem;
+     position: absolute;
+     box-shadow: 0px 0px 3px black;
+     right: 25%;
+     bottom: 30%;
+   }
+   a {
+    color: black;
+    text-decoration: none;
+   }
+   .hero a:hover{
+    background-color:#c9f7ff;
+    font-weight: bolder;
+    color: #2e2e2e;
+    box-shadow: 0px 3px 4px black;
+   }
+   #icon {
+    animation: float 4s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    transform-origin: center;
   }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translateY(-8px) rotate(-2deg) scale(1.02);
+    }
+    50% {
+      transform: translateY(-15px) rotate(2deg) scale(1.03);
+    }
+    75% {
+      transform: translateY(-8px) rotate(-1deg) scale(1.01);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg) scale(1);
+    }
+  }
+    /*Sectin Weather*/
+ 
+    .weather{
+     
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+     
+    }
+    h3{text-align: center;}
+    .province ul{
+
+    list-style:none ;
+    }
+    .province li{
+      background-color: #d9ffd1;
+      margin-bottom: 10px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin:30px;
+      text-align: center;
+      border-radius: 1rem;
+      box-shadow: 0px 0px 3px black;
+
+    }
+    .regions{
+      position: relative;
+      margin: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      
+     }
+    .box{
+     background-color:#effff3;
+     margin: 30px ;
+     padding: 20px;
+     box-shadow: 0px 0px 3px gray;
+     border-radius: 1rem;
+    }
+    .box:hover{
+      opacity: 0.5;
+      padding: 40px;
+    }
+    figure figcaption{
+     background-color: white;
+     padding: 10px;
+     text-align: center;
+     font-size: medium;
+     font-weight: bolder;
+     box-shadow: 0px 0px 2px black;
+     border-radius: 1rem;
+    }
+    .body-box ul{
+     list-style: none;
+    }
+    #icon{
+     float: right;
+    }
+    .head-box{
+     border-bottom: 1px solid black;
+    }
+    .body-box ul li{
+     margin-top: 20px;
+     margin-bottom: 20px;
+     
+    }
+    .modif{
+     text-align: right;
+    }
+    .house li{
+     background-color: white;
+     padding: 10px;
+     text-align: center;
+     font-size: medium;
+     font-weight: bolder;
+     box-shadow: 0px 0px 2px black;
+     border-radius: 1rem;
+    }
+    .cont{
+     color: #646464;
+     font-size: larger;
+     font-weight: bolder;
+    }
+  
+ /*section business*/
+
+ .text-container {
+ width: 70%;
+ margin: 0 auto;
+}
+h2{
+  margin-bottom: 20px;
+ }
+ .text-container p,h3{
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:1500px) {
+ 
   section{
     width: 98%;;
   }
@@ -317,14 +506,11 @@ color:rgb(26, 27, 27);
   .card{
     width: 80%;
   }
-  .houses{
-    grid-template-columns: 1fr 1fr;
-  }
+
   section{
     width: 100%;;
   }
-  .extrait{
-    display: grid;
+  .weather,.regions{
     grid-template-columns: 1fr 1fr;
   }
   .hero a{
@@ -342,16 +528,12 @@ color:rgb(26, 27, 27);
     right: 25%;
     bottom: 55%;
   }
-  .weather{
-    display: grid;
-    grid-template-rows: 1fr;
-  }
-  .extrait{
-    grid-template-columns: 1fr;
-  }
- 
+  
 }
 @media screen and (max-width:750px) {
+  .province{
+    width: 95%;
+  }
   .hero{
     width: 97%;
     margin: 0 auto;
@@ -361,10 +543,10 @@ color:rgb(26, 27, 27);
  
    }
    .bottom{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
    }
-   .extrait{
+   .weather,.regions{
     width: 90%;
     margin: 0px;
   }
@@ -382,7 +564,7 @@ color:rgb(26, 27, 27);
     bottom:60%;
   }
   main h1{ 
-   font-size: medium;
+   font-size: x-large;
   }
   .houses{
     grid-template-columns: 1fr;
@@ -390,19 +572,9 @@ color:rgb(26, 27, 27);
   section{
     width: 100%;
   }
-  .houses{
-    margin: 0px;
-    border-radius: 0.4rem;
-    box-shadow: 0px 0px 3px black;
-    margin-bottom: 20px;
-    
-  }
-  .box{
-   width: 80%;
-   margin-top: 20px;
-   }
-   .extrait{
-   justify-items: left;
+
+   .weather,.regions{
+   justify-items:center;
    }
    .body-bo
   nav ul{
@@ -489,123 +661,15 @@ footer div{
 }
 }
 @media screen and (max-width:600px) {
-  .search{
-    width: 90%;
-    min-width: 300px;
-    outline: 6px solid var(--primary-color);
-    }
+  .weather,.regions{
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width:500px) {
+ header h1{
+  font-size: large;
+ }
 }
 
 
 
-
-  /*Section HERO*/
-
-
-  .hero{
-    width: 95%;
-    margin: 0 auto;
-    padding: 5px;
-    height: 50%;
-    border-radius: 1rem;
-    background-color: var(--accent3-color)
- 
- 
-   }
-   .herohead{
-     font-size: 2vw;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     color: #2C535A;
-   }
-   main h1{ 
-     text-align: center;
-     margin: 20px;
-     font-size: 2vw;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     color: #2C535A;
-   }
-   .hero img{
-     margin: 0 auto;
-     width: 100%;
-     height: 600px;
-     border-radius: 1rem;
-   }
-   .hero a{
-     text-decoration: none;
-     background-color: #2e2e2e;
-     color: #c9f7ff;
-     padding: 20px;
-     border-radius: 1rem;
-     position: absolute;
-     box-shadow: 0px 0px 3px black;
-     right: 25%;
-     bottom: 30%;
-   }
-   .hero a:hover{
-    background-color:#c9f7ff;
-    font-weight: bolder;
-    color: #2e2e2e;
-    box-shadow: 0px 3px 4px black;
-   }
- 
-    /*Sectin Weather*/
- 
-    .weather{
-     
-     display: flex;
-     justify-content: center;
-     
-    }
-    .box{
-     background-color:#effff3;
-     margin: 30px ;
-     padding: 20px;
-     box-shadow: 0px 0px 3px gray;
-     border-radius: 1rem;
-    }
-    figure figcaption{
-     background-color: white;
-     padding: 10px;
-     text-align: center;
-     font-size: medium;
-     font-weight: bolder;
-     box-shadow: 0px 0px 2px black;
-     border-radius: 1rem;
-    }
-    .body-box ul{
-     list-style: none;
-    }
-    #icon{
-     float: right;
-    }
-    .head-box{
-     border-bottom: 1px solid black;
-    }
-    .body-box ul li{
-     margin-top: 20px;
-     margin-bottom: 20px;
-     
-    }
-    .modif{
-     text-align: right;
-    }
-    .house li{
-     background-color: white;
-     padding: 10px;
-     text-align: center;
-     font-size: medium;
-     font-weight: bolder;
-     box-shadow: 0px 0px 2px black;
-     border-radius: 1rem;
-    }
-    .cont{
-     color: #646464;
-     font-size: larger;
-     font-weight: bolder;
-    }
-  
- /*section business*/
- .extrait{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
- }
