@@ -80,7 +80,7 @@ export async function generateTemplate(city){
         
       const weatherElement = document.querySelector('.weather');
       const template = `<div class='box'>
-      <a href='/public/city/?city=${city}'>
+      <a href='/city/?city=${city}'>
               <div class='head-box'>
                    <h2>${city}</h2>
                    
